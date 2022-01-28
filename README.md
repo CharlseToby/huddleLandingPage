@@ -12,7 +12,6 @@ This is a solution to the [Huddle landing page with curved sections challenge on
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -31,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://charlsetoby.github.io/huddleLandingPage/
 
 
 ## My process
@@ -49,10 +48,6 @@ Users should be able to:
 
 ### Continued development
 
-
-## Author
-
-- Website - [Toochukwu Charles Okolie](https://www.your-site.com)
 
 ## Acknowledgments
 
