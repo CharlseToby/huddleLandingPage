@@ -18,12 +18,13 @@ function checkEmailValidity() {
 
     let emailValue= email.value;
     if (emailValue === "") {
-        alert ("email cannot be blank");
+        window.confirm ("email cannot be blank");
+        window.location.reload();
     } else if (!isEmail(emailValue)){
         
         message.innerHTML = "invalid email entered";
     } else {
-        message.innerHTML = "You have subcribed successfully";
+        message.innerHTML = "Check your email please";
     }
 
     email.value = "";
