@@ -534,8 +534,11 @@ main > section .section_text > p {
     align-items: flex-start;
     padding-top: 2rem;
   }
-  #footer p {
+  #footer #footer_section1 p {
     max-width: 23rem;
+  }
+  #footer #footer_section2 p {
+    max-width: 20rem;
   }
 
   #footer #footer_section1 .footer_section1_subscribe {
@@ -552,7 +555,7 @@ main > section .section_text > p {
   #footer #footer_section2 .footer_logo svg {
     /* width: 16px; */
     fill: #fff;
-    width: 280px;
+    width: 250px;
   }
 
   #footer #footer_section1 .footer_section1_subscribe .footer_section1_input {
