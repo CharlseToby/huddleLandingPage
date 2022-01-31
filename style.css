@@ -257,6 +257,7 @@ main > section .section_text > p {
 #footer #footer_section2 .footer_logo svg {
   /* width: 16px; */
   fill: #fff;
+  width: 220px;
 }
 
 #footer_section2 .footer_text {
@@ -546,6 +547,12 @@ main > section .section_text > p {
 
   #footer #footer_section1 h2 {
     padding-top: 0;
+  }
+
+  #footer #footer_section2 .footer_logo svg {
+    /* width: 16px; */
+    fill: #fff;
+    width: 280px;
   }
 
   #footer #footer_section1 .footer_section1_subscribe .footer_section1_input {
