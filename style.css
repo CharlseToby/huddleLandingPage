@@ -48,6 +48,7 @@ p {
   border: none;
   border-radius: 1.5rem;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -88,6 +89,7 @@ p {
   border: 0.1rem solid hsl(322, 100%, 66%);
   border-radius: 1.5rem;
   margin: 0.3rem 0;
+  cursor: pointer;
 }
 
 .nav_button:hover {
@@ -231,6 +233,8 @@ main > section .section_text > p {
 }
 #footer #footer_section1 input:hover {
   cursor: pointer;
+  transition: 0.3s;
+  border: 0.15rem solid rgb(164, 72, 93);
 }
 
 #footer #footer_section1 input:focus {
@@ -375,32 +379,78 @@ main > section .section_text > p {
   body {
     font-size: 16px;
   }
+  .btn {
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 1.5rem 5.4rem;
+    font-size: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .content-wrap {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
   }
+
+  /* -----NAV----- */
+  #nav {
+    padding: 3rem;
+    /*  padding-left: 2rem;
+    padding-right: 2rem; */
+  }
+  .nav_logo {
+    margin-top: 0.7rem;
+    height: 2.2rem;
+  }
+  .nav_button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* -----HEADER------- */
 
   #header .stats-wrap {
     display: flex;
     width: auto;
     text-align: left;
-    margin: 0 auto;
+    margin: 4rem auto;
     justify-content: space-around;
     align-items: center;
   }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    justify-content: space-between;
-    align-items: center;
+  #header .stats-wrap img {
+    width: 2.8rem;
   }
-
+  #header h1 {
+    padding: 16px 0;
+    font-size: 2.6rem;
+  }
+  #header button {
+    font-size: 1rem;
+    padding: 1.5rem 5.4rem;
+  }
+  #header .header_image {
+    padding: 2px 5rem;
+  }
+  #header .stats-wrap_num {
+    font-size: 5.2rem;
+  }
   #header_text {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  /* ---MAIN---- */
+  main > section .section_text > h3 {
+    font-size: 2.2rem;
+  }
+  main > section .section_text > p {
+    font-size: 0.9rem;
   }
 
   #sectionA_background-top {
@@ -437,33 +487,6 @@ main > section .section_text > p {
     background-size: cover;
   }
 
-  /*  #sectionA_background-top, 
-    #sectionC_background-top {
-        line-height: 0;
-    } */
-
-  /* #sectionA_background-top img, 
-    #sectionC_background-top img {   
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        margin: 0;
-    } */
-
-  /*   #sectionA_background-bottom, 
-    #sectionC_background-bottom {
-        line-height: 0;
-    }
-    
-    #sectionA_background-bottom img, 
-    #sectionC_background-bottom img {   
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        margin: 0;
-    }
- */
-
   #sectionA {
     background-color: hsl(207, 100%, 98%);
     background-size: 100%, 100%;
@@ -474,15 +497,27 @@ main > section .section_text > p {
   }
 
   .section_image img {
-    width: 25em;
-    height: 400px;
+    width: 100%;
+    height: auto;
     padding: 2.3em 0.2em;
   }
-
+  .section_text {
+    text-align: left;
+  }
   #sectionA .section_text,
   #sectionC .section_text,
   #footer #footer_section2 {
     order: -1;
+  }
+  #sectionD h2 {
+    font-size: 2.2rem;
+  }
+
+  /* ----FOOTER---- */
+
+  #footer #footer_section2 p,
+  #footer #footer_section1 p {
+    font-size: 0.9rem;
   }
 
   #footer_top {
@@ -493,17 +528,13 @@ main > section .section_text > p {
     display: none;
   }
 
-  /* #footer_top {
-        width: 100%;
-        height: 158px;
-        background-image: url('./images/bg-footer-top-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    } */
-
   #footer .grid {
+    grid-column-gap: 7rem;
     align-items: flex-start;
+    padding-top: 2rem;
+  }
+  #footer p {
+    max-width: 23rem;
   }
 
   #footer #footer_section1 .footer_section1_subscribe {
@@ -521,6 +552,10 @@ main > section .section_text > p {
     flex-grow: 2;
   }
 
+  .footer_section1_subscribe {
+    margin-top: 2rem;
+  }
+
   #footer #footer_section1 input {
     width: 100%;
   }
@@ -533,8 +568,8 @@ main > section .section_text > p {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.38em;
-    margin-top: 3px;
+    margin-top: 1px;
     width: 8em;
-    height: 0%;
+    height: 2.4rem;
   }
 }
